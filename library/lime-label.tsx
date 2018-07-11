@@ -1,12 +1,17 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+import labelStyle from './labelStyle';
 
 export interface LimeLabelProps {
   text: string;
 }
 
-export default class LimeLabel extends React.Component<LimeLabelProps> {
+export default class LimeLabel extends Component<LimeLabelProps> {
   render() {
-    return <Text style={{ textShadowColor: "black", textShadowRadius: 3, textShadowOffset: { width: 1, height: 1 }, color: "lime", fontSize: 30 }}>{this.props.text}</Text>;
+    return (
+      <Text style={[ labelStyle, { color: 'lime' } ]}>
+        { this.props.text }
+      </Text>
+    );
   }
 }

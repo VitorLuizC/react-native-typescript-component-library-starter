@@ -1,6 +1,6 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import LimeLabel from "./library/lime-label";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import LimeLabel from './library/lime-label';
 
 export default class App extends React.Component<{}> {
   render() {
@@ -18,8 +18,8 @@ export default class App extends React.Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 });

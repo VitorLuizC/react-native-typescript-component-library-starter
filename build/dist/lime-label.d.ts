@@ -1,7 +1,7 @@
-import React from "react";
+import { Component } from 'react';
 export interface LimeLabelProps {
     text: string;
 }
-export default class LimeLabel extends React.Component<LimeLabelProps> {
+export default class LimeLabel extends Component<LimeLabelProps> {
     render(): JSX.Element;
 }

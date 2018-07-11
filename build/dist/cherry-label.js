@@ -1,15 +1,16 @@
 import * as tslib_1 from "tslib";
-import React from "react";
-import { Text } from "react-native";
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+import labelStyle from './labelStyle';
 var CherryLabel = /** @class */ (function (_super) {
     tslib_1.__extends(CherryLabel, _super);
     function CherryLabel() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     CherryLabel.prototype.render = function () {
-        return React.createElement(Text, { style: { textShadowColor: "black", textShadowRadius: 3, textShadowOffset: { width: 1, height: 1 }, color: "pink", fontSize: 30 } }, this.props.text);
+        return (React.createElement(Text, { style: [labelStyle, { color: 'pink' }] }, this.props.text));
     };
     return CherryLabel;
-}(React.Component));
+}(Component));
 export default CherryLabel;
 //# sourceMappingURL=cherry-label.js.map
