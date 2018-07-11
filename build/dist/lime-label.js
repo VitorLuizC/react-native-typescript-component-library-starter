@@ -7,7 +7,7 @@ var LimeLabel = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     LimeLabel.prototype.render = function () {
-        return <Text style={{ textShadowColor: "black", textShadowRadius: 3, textShadowOffset: { width: 1, height: 1 }, color: "lime", fontSize: 30 }}>{this.props.text}</Text>;
+        return React.createElement(Text, { style: { textShadowColor: "black", textShadowRadius: 3, textShadowOffset: { width: 1, height: 1 }, color: "lime", fontSize: 30 } }, this.props.text);
     };
     return LimeLabel;
 }(React.Component));

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import React from "react";
 export interface LimeLabelProps {
     text: string;
